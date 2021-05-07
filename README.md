@@ -1,3 +1,17 @@
-# Laravel CRUD
+# Exam Dashboard
 
-A simple example of how to create, read, update and delete a resource in Laravel 8.
+author: Albert K Waruwu
+
+## Functionality
+- Create question and answer
+- Update question and answer
+- View question and answer
+- Delete question
+
+## Screenshoot
+### Index
+![index](./screenshoots/index.png)
+### Create
+![create](./screenshoots/create.png)
+### Update
+![update](./screenshoots/update.png)

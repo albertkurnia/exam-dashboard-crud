@@ -169,6 +169,7 @@ class QuestionsController extends Controller
     public function destroy(Question $question)
     {
         $question->delete();
+        DB::table('answers')->where('question_id', '=', $question->id)->delete();
 
         return redirect('/questions');
     }
