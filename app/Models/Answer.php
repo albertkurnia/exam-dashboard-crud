@@ -10,6 +10,6 @@ class Answer extends Model
     use HasFactory;
 
     protected $fillable = [
-        'question_id', 'answer', 'true_answer'
+        'question_id', 'answer', 'true_answer', 'order_id'
     ];
 }

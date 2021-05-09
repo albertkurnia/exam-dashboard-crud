@@ -55,7 +55,7 @@
             <button class="bg-blue-500 tracking-wide text-white px-6 py-2 inline-block mb-6 shadow-lg rounded hover:shadow">Update</button>
             <a href="/questions" class="bg-gray-500 tracking-wide text-white px-6 py-2 inline-block mb-6 shadow-lg rounded hover:shadow">Back</a>
         </form>
-        <form action="/questions/{{ $question->id }}">
+        <form method="POST" action="/questions/{{ $question->id }}">
                 @csrf
                 @method('DELETE')
 

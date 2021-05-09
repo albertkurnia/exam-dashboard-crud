@@ -14,42 +14,42 @@
 
                 <div class="mb-4">
                     <label class="font-bold text-gray-800" for="question_no">Question No: </label>
-                    <input class="h-10 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="question_no" name="question_no">
+                    <input class="h-10 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="question_no" name="question_no" required>
                 </div>
 
                 <div class="mb-4">
                     <label class="font-bold text-gray-800" for="question">Question: </label>
-                    <textarea class="h-16 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="question" name="question"></textarea>
+                    <textarea class="h-16 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="question" name="question" required></textarea>
                 </div>
 
                 <div class="mb-4">
                     <label class="font-bold text-gray-800" for="status">Status: </label>
-                    <input class="h-10 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="status" name="status">
+                    <input class="h-10 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="status" name="status" required>
                 </div>
 
                 <div class="mb-4">
                     <label class="font-bold text-gray-800" for="first_answer">Answer 1: </label>
-                    <input class="h-10 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="first_answer" name="first_answer">
+                    <input class="h-10 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="first_answer" name="first_answer" required>
                 </div>
 
                 <div class="mb-4">
                     <label class="font-bold text-gray-800" for="second_answer">Answer 2: </label>
-                    <input class="h-10 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="second_answer" name="second_answer">
+                    <input class="h-10 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="second_answer" name="second_answer" required>
                 </div>
 
                 <div class="mb-4">
                     <label class="font-bold text-gray-800" for="third_answer">Answer 3: </label>
-                    <input class="h-10 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="third_answer" name="third_answer">
+                    <input class="h-10 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="third_answer" name="third_answer" required>
                 </div>
 
                 <div class="mb-4">
                     <label class="font-bold text-gray-800" for="fourth_answer">Answer 4: </label>
-                    <input class="h-10 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="fourth_answer" name="fourth_answer">
+                    <input class="h-10 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="fourth_answer" name="fourth_answer" required>
                 </div>
 
                 <div class="mb-4">
                     <label class="font-bold text-gray-800" for="true_answer">True Answer: </label>
-                    <input class="h-10 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="true_answer" name="true_answer">
+                    <input class="h-10 bg-white border border-gray-300 rounded py-4 px-3 mr-4 w-full text-gray-600 text-sm focus:outline-none focus:border-gray-400 focus:ring-0" id="true_answer" name="true_answer" required>
                 </div>
 
                 <button class="bg-blue-500 tracking-wide text-white px-6 py-2 inline-block mb-6 shadow-lg rounded hover:shadow">Create</button>

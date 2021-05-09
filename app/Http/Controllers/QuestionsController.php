@@ -70,7 +70,8 @@ class QuestionsController extends Controller
             Answer::create([
                 'question_id' => $question_id,
                 'answer' => $answers[$x],
-                'true_answer' => $true_answer
+                'true_answer' => $true_answer,
+                'order_id' => $x + 1
             ]);
         }
 
@@ -125,7 +126,7 @@ class QuestionsController extends Controller
             'fourth_answer' => 'required',
             'true_answer' => 'required'
         ]);
-
+        
         array_push($answers, request('first_answer'));
         array_push($answers, request('second_answer'));
         array_push($answers, request('third_answer'));
@@ -141,13 +142,6 @@ class QuestionsController extends Controller
             $idx = 3;
         }
 
-        $question->update([
-            'question_no' => request('question_no'),
-            'question' => request('question'),
-            'status' => request('status')
-        ]);
-
-        $answers = array_values($answers);
         $true_answer = "false";
         for ($x=0; $x<4; $x++) {
             if ($x == $idx) {
@@ -155,13 +149,20 @@ class QuestionsController extends Controller
             } else {
                 $true_answer = "false";
             }
-            
-            DB::table('answers')->where('question_id', '=', $question->id)->update([
+        
+            $res = DB::table('answers')->where('question_id', '=', $question->id)->where('order_id', '=', $x+1)->update([
                 'question_id' => $question->id,
                 'answer' => $answers[$x],
                 'true_answer' => $true_answer
             ]);
+
         }
+
+        $question->update([
+            'question_no' => request('question_no'),
+            'question' => request('question'),
+            'status' => request('status')
+        ]);
 
         return redirect('/questions');
     }
@@ -169,7 +170,6 @@ class QuestionsController extends Controller
     public function destroy(Question $question)
     {
         $question->delete();
-        DB::table('answers')->where('question_id', '=', $question->id)->delete();
 
         return redirect('/questions');
     }
